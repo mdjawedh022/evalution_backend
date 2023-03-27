@@ -9,9 +9,6 @@ require("dotenv").config();
 app.use(express.json())
 app.use(cors());
 
-app.get("/",(req,res)=>{
-    res.send("Welcome to Home Page")
-    })
 
 app.use("/users",userRouter)
 app.use(auth);
